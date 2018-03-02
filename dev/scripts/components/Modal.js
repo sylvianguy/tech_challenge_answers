@@ -25,7 +25,7 @@ const Modal = ({
 					<label htmlFor="">Enter your postal code to find stores near you!</label>
 					<input onChange={(e) => city(e)} type="text" placeholder="e.g L6T1M8" />
 					<input type="submit"/>
-					<DisplayInfo display={sent === true}>
+					<DisplayInfo display={sent}>
 						<label htmlFor="" className="labelWrapper">
 							<select defaultValue="default" onChange={(e) => selectStore(e)} name="" id="">
 								<option value="default">Choose a Location</option>
